@@ -1,0 +1,51 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+      X-User-Token:
+      - NRKmtZsY8J4FCXttRRvH
+    method: GET
+    uri: http://localhost:5000/api/v1/oms/1/messages?project_item_id=1&project_id=1436
+  response:
+    body:
+      string: "{\"messages\":[{\"id\":657,\"author\":{\"email\":\"email@domain\",\"name\":\"John
+        Doe\",\"role\":\"user\"},\"content\":\"Sample message\",\"scope\":\"public\",\"created_at\":\"2021-05-25T23:21:24Z\",\"updated_at\":\"2021-05-25T23:21:25Z\"}]}"
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      ETag:
+      - W/"a6ee0c9465296b6a7f8adacb04fb6ea1"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - 04c9c3be-fd48-4fbb-829c-896e5bc6b6ec
+      X-Runtime:
+      - '0.024611'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

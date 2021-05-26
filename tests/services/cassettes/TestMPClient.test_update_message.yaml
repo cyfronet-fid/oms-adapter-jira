@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: '{"content": "Updated Content"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '30'
+      Content-type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+      X-User-Token:
+      - NRKmtZsY8J4FCXttRRvH
+    method: PATCH
+    uri: http://localhost:5000/api/v1/oms/1/messages/659
+  response:
+    body:
+      string: '{"id":659,"author":{"email":"helpdesk@helpdesk.com","name":"Operator","role":"mediator"},"content":"Updated
+        Content","scope":"public","created_at":"2021-05-25T23:58:29Z","updated_at":"2021-05-26T00:04:02Z"}'
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      ETag:
+      - W/"81647051d3e489b8fa21f91c31e2a788"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - f8c017d6-04b2-4977-a0b6-adead3aac015
+      X-Runtime:
+      - '0.051900'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

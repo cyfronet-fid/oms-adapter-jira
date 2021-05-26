@@ -1,0 +1,50 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+      X-User-Token:
+      - NRKmtZsY8J4FCXttRRvH
+    method: GET
+    uri: http://localhost:5000/api/v1/oms/1
+  response:
+    body:
+      string: '{"id":1,"name":"SOMBO","type":"global","default":true,"trigger_url":"http://127.0.0.1:9000/oms/trugger","custom_params":{"order_target":{"mandatory":false}}}'
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      ETag:
+      - W/"0708b5606a6b42e15c23fd7cf5c27a85"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - e522e4de-ec9f-4527-99ee-3f00a94d4aa4
+      X-Runtime:
+      - '0.022477'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

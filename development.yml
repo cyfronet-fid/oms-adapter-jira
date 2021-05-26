@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  flask:
+    build: .
+    environment:
+      - FLASK_ENV=development
+      - SENTRY_DSN=${SENTRY_DSN}
+      - SENTRY_ENVIRONMENT=${SENTRY_ENVIRONMENT:-development}
+      - SENTRY_RELEASE=${SENTRY_RELEASE}
+    depends_on:
+      - mongo
+    ports:
+      - ${FLASK_RUN_HOST-127.0.0.1}:${FLASK_RUN_PORT:-9000}:5000
+    entrypoint: flask run
+    volumes:
+    - .:/app
+  worker:
+    build: .
+    environment:
+      - FLASK_ENV=development
+      - SENTRY_DSN=${SENTRY_DSN}
+      - SENTRY_ENVIRONMENT=${SENTRY_ENVIRONMENT:-development}
+      - SENTRY_RELEASE=${SENTRY_RELEASE}
+    depends_on:
+      - mongo
+      - redis
+    entrypoint: celery -A worker:app worker --loglevel=${CELERY_LOG_LEVEL:-INFO}
+    volumes:
+      - .:/app

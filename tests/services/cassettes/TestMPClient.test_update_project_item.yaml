@@ -1,0 +1,54 @@
+interactions:
+- request:
+    body: '{"status": {"value": "in_progress", "type": "in_progress"}, "user_secrets":
+      {}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '79'
+      Content-type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+      X-User-Token:
+      - NRKmtZsY8J4FCXttRRvH
+    method: PATCH
+    uri: http://localhost:5000/api/v1/oms/1/projects/1436/project_items/1
+  response:
+    body:
+      string: '{"id":1,"project_id":1436,"status":{"value":"in_progress","type":"in_progress"},"attributes":{"category":"Orchestration","service":"00
+        New resource test offert ","offer":"Offer","offer_properties":[],"platforms":[],"request_voucher":false,"order_type":"other"},"user_secrets":{}}'
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      ETag:
+      - W/"241cfe01f537aaa7f98fa7e0330cdec2"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - 424813e7-35c4-433c-829c-0c8ca7704901
+      X-Runtime:
+      - '0.237605'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

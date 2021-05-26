@@ -1,0 +1,68 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+      X-User-Token:
+      - NRKmtZsY8J4FCXttRRvH
+    method: GET
+    uri: http://localhost:5000/api/v1/oms/1/projects
+  response:
+    body:
+      string: |
+                {"projects": [
+                  {
+                      "id": 1436,
+                      "owner": {"email": "email@domain", "name": "John Doe"},
+                      "project_items": [1, 2, 3],
+                      "attributes": {
+                          "name": "Sample project",
+                          "customer_typology": "single_user",
+                          "organization": "CYF",
+                          "department": "",
+                          "department_webpage": "http://cyfronet.pl",
+                          "scientific_domains": ["Aerospace Engineering"],
+                          "country": "Poland",
+                          "collaboration_countries": [],
+                          "user_group_name": ""
+                      }
+                  }
+                ]}
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      ETag:
+      - W/"04709f497a4591f8776b217fa38b300b"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - de01347b-1f9a-4d20-ae33-dc968445c89b
+      X-Runtime:
+      - '0.426794'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

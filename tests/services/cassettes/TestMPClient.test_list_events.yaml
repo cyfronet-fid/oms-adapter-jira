@@ -1,0 +1,50 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+      X-User-Token:
+      - NRKmtZsY8J4FCXttRRvH
+    method: GET
+    uri: http://localhost:5000/api/v1/oms/1/events?oms_id=1&from_timestamp=2021-05-25T21%3A01%3A45
+  response:
+    body:
+      string: '{"events":[{"timestamp":"2021-05-25T21:07:42Z","type":"create","resource":"project_item","project_id":1436,"project_item_id":3},{"timestamp":"2021-05-25T21:07:44Z","type":"update","resource":"project_item","changes":[{"after":"ready","field":"status.type","before":"created"},{"after":"ready","field":"status.value","before":"created"}],"project_id":1436,"project_item_id":3}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      ETag:
+      - W/"c42099c9a6b182befdd67c0f40312636"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - 00562814-6cbe-40d8-bdf4-51bda741bfea
+      X-Runtime:
+      - '0.076557'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

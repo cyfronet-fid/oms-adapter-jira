@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  flask:
+    build: .
+    environment:
+      - FLASK_ENV=testing
+      - ENTRY_DSN=${SENTRY_DSN}
+      - SENTRY_ENVIRONMENT=${SENTRY_ENVIRONMENT:-testing}
+    entrypoint: pytest ./tests
+    volumes:
+    - ./app

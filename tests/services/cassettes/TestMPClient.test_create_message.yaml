@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: '{"project_id": 1436, "project_item_id": 1, "author": {"email": "helpdesk@helpdesk.com",
+      "name": "Operator", "role": "mediator"}, "content": "Reply", "scope": "public"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '167'
+      Content-type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+      X-User-Token:
+      - NRKmtZsY8J4FCXttRRvH
+    method: POST
+    uri: http://localhost:5000/api/v1/oms/1/messages
+  response:
+    body:
+      string: '{"id":659,"author":{"email":"helpdesk@helpdesk.com","name":"Operator","role":"mediator"},"content":"Reply","scope":"public","created_at":"2021-05-25T23:58:29Z","updated_at":"2021-05-25T23:58:29Z"}'
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      ETag:
+      - W/"04c6e6ec6474a9c8ad1353be63b9ca17"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - b58ed536-a9d6-4c43-bd57-b900ee4ad643
+      X-Runtime:
+      - '0.338173'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 201
+      message: Created
+version: 1
